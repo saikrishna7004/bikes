@@ -106,7 +106,18 @@ p {
 .footer-text {
   font-family: 'ABeeZee', Helvetica, Arial, Lucida, sans-serif;
   font-size: 20px;
-  
+}
+
+.bebas {
+  font-family: 'Bebas Neue', display;
+}
+
+.montserrat {
+  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.oswald {
+  font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
 }
 
 @media (max-width: 768px) {

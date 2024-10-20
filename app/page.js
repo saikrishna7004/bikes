@@ -1,14 +1,11 @@
 "use client"
 import AboutInfo from '@/components/AboutInfo';
-import ContactInfo from '@/components/ContactInfo';
 import DealershipSection from '@/components/Dealership';
 import EcoFriendly from '@/components/EcoFriendly';
 import FAQSection from '@/components/FAQ';
 import PEVBikesSection from '@/components/PEV';
 import PowerYourJourney from '@/components/PowerJourney';
 import ElectricVehicles from '@/components/Vehicles';
-import Image from 'next/image';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -49,8 +46,6 @@ export default function Home() {
             <PEVBikesSection />
 
             <FAQSection />
-
-            <ContactInfo />
         </div>
     );
 }

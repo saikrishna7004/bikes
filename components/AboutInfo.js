@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { FaArrowRight } from 'react-icons/fa'
 
 const AboutInfo = () => {
     return (
@@ -29,8 +30,9 @@ const AboutInfo = () => {
                         Built with a focus on sustainability and performance, the Electric Frontier PEV bikes feature powerful electric motors, long-lasting batteries, and durable frames designed to handle both urban streets and rugged trails. Whether you’re commuting to work or exploring off-road paths, these bikes provide a seamless, pedal-assist experience that minimizes effort while maximizing range and speed.
                     </p>
                     <div className="mt-6 text-center text-[#666]">
-                        <Link href="/about-us/" className="inline-block bg-[#ea3900] text-white py-2 px-4 rounded hover:bg-[#ea3900]">
+                        <Link href="/about-us" className="inline-flex items-center text-[#ea3900] py-4 pe-4 ps-10 bg-white text-2xl bebas relative group transition-all duration-300">
                             READ MORE
+                            <FaArrowRight className='ml-2 transform -translate-x-full opacity-0 group-hover:translate-x-0 text-md group-hover:opacity-100 transition-all duration-300' />
                         </Link>
                     </div>
                 </div>

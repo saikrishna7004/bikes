@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { NavLink } from './NavLink';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
 
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
-        
+
         handleResize();
 
         return () => {
@@ -49,7 +50,7 @@ const Navbar = () => {
                 </div>
                 <nav className="hidden md:flex flex-grow justify-end">
                     <ul className="flex space-x-8 new-text font-semibold">
-                        <li><NavLink href="/" className="text-gray-700 link">Home</NavLink></li>
+                        <li><NavLink href="/" exact className="text-gray-700 link">Home</NavLink></li>
                         <li><NavLink href="/about-us" className="text-gray-700 link">About us</NavLink></li>
                         <li><NavLink href="/dealership" className="text-gray-700 link">Dealership</NavLink></li>
                         <li><NavLink href="/contact-us" className="text-gray-700 link">Contact us</NavLink></li>
@@ -57,7 +58,7 @@ const Navbar = () => {
                 </nav>
                 <div className="md:hidden">
                     <button onClick={() => setMobileMenuOpen(!isMobileMenuOpen)} className="text-gray-700 focus:outline-none">
-                        {isMobileMenuOpen ? 'Close' : 'Menu'}
+                        {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
                     </button>
                 </div>
             </div>
