@@ -67,7 +67,7 @@ p {
   padding-left: 80px;
 }
 
-.new-test {
+.new-text {
   font-family: 'ABeeZee', Helvetica, Arial, Lucida, sans-serif;
   font-size: 20px;
 }
@@ -82,6 +82,31 @@ p {
 
 .link.active {
   color: #ea3900;
+}
+
+.head-2 {
+  font-family: 'Bebas Neue', display;
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 1em;
+}
+
+.new-head {
+  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 30px;
+}
+
+.footer-head {
+  font-family: 'Bebas Neue', display;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1em;
+}
+
+.footer-text {
+  font-family: 'ABeeZee', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 20px;
+  
 }
 
 @media (max-width: 768px) {
@@ -107,5 +132,9 @@ p {
   .head {
     font-size: 50px;
     line-height: 1;
+  }
+
+  .head-2 {
+    font-size: 40px;
   }
 }

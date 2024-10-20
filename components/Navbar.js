@@ -35,7 +35,7 @@ const Navbar = () => {
 
     return (
         <header className="bg-white fixed top-0 left-0 w-full shadow z-50">
-            <div className="container mx-auto flex justify-between items-center px-[160px]">
+            <div className="container mx-auto flex justify-between items-center md:px-[160px] px-[50px]">
                 <div className="logo_container">
                     <a href="/">
                         <Image
@@ -48,7 +48,7 @@ const Navbar = () => {
                     </a>
                 </div>
                 <nav className="hidden md:flex flex-grow justify-end">
-                    <ul className="flex space-x-8 new-test font-semibold">
+                    <ul className="flex space-x-8 new-text font-semibold">
                         <li><NavLink href="/" className="text-gray-700 link">Home</NavLink></li>
                         <li><NavLink href="/about-us" className="text-gray-700 link">About us</NavLink></li>
                         <li><NavLink href="/dealership" className="text-gray-700 link">Dealership</NavLink></li>

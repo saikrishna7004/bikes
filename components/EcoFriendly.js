@@ -11,7 +11,7 @@ const EcoFriendly = () => {
                     <br />
                     <span className="text-zinc-700">Effortless, Eco-Friendly Electric Bikes for Every Journey</span>
                 </h1>
-                <p className="mt-4 text-justify pl-8">
+                <p className="mt-8 text-justify pl-8 text-lg text-neutral-700">
                     Experience the thrill of effortless commuting with our cutting-edge electric bikes. Designed for sustainability and convenience, our <span className="text-orange-600 font-bold">PEV Electric Bikes</span> provide a smooth, eco-friendly ride for urban explorers and adventure seekers alike. Join the green revolution today!
                 </p>
             </div>
