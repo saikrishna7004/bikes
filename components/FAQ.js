@@ -30,14 +30,13 @@ const FAQSection = () => {
 
     return (
         <div className="flex flex-col md:flex-row">
-            <div className="relative w-full md:w-1/2 bg-cover bg-center"
+            <div className="relative w-full md:w-1/2 bg-cover bg-center md:p-[80px] p-12"
                 style={{
                     backgroundImage: "url('https://karthikselectricfrontier.com/wp-content/uploads/2024/10/transportation-services-01.png')",
                     backgroundAttachment: 'fixed',
-                    padding: '80px'
                 }}>
                 <div className="h-full flex flex-col justify-between">
-                    <h3 className="text-2xl font-bold mb-4 new-head text-zinc-800">Frequently Asked Questions</h3>
+                    <h4 className="md:text-2xl font-bold mb-4 new-head text-zinc-800">Frequently Asked Questions</h4>
                     <div className="py-5 flex-1 overflow-auto">
                         {faqs.map((item, index) => (
                             <div key={index} className="bg-white mb-4">
@@ -59,8 +58,7 @@ const FAQSection = () => {
                 </div>
             </div>
 
-            {/* Right Side for Contact Form */}
-            <div className="w-full md:w-1/2 p-4 bg-neutral-800 p-[80px]">
+            <div className="w-full md:w-1/2 p-4 bg-neutral-800 md:p-[80px] p-14">
                 <h3 className="text-2xl font-bold text-neutral-100 mb-8 new-head">Get a Free Quote -or- Ask a Question</h3>
                 <form className="" method="post" action="https://karthikselectricfrontier.com/">
                     <input type="text" id="name" className="w-full p-4 mb-4 bg-neutral-700 focus:border-0 text-white" placeholder="Name" required />

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { NavLink } from './NavLink';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,16 +11,18 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const scrollY = window.scrollY;
-            const newHeight = Math.max(80, 200 - scrollY);
-            setImageHeight(newHeight);
+            if (window.innerWidth >= 768) {
+                const scrollY = window.scrollY;
+                const newHeight = Math.max(80, 200 - scrollY);
+                setImageHeight(newHeight);
+            }
         };
 
         const handleResize = () => {
             if (window.innerWidth < 768) {
-                setImageHeight(200);
+                setImageHeight(100);
             } else {
-                handleScroll()
+                handleScroll();
             }
         };
 
@@ -65,10 +68,10 @@ const Navbar = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-white absolute left-0 right-0 top-full shadow-lg">
                     <ul className="flex flex-col space-y-2 p-4">
-                        <li><a href="https://karthikselectricfrontier.com/" className="text-gray-700 hover:text-[#ea3900]">Home</a></li>
-                        <li><a href="https://karthikselectricfrontier.com/about-us/" className="text-gray-700 hover:text-[#ea3900]">About us</a></li>
-                        <li><a href="https://karthikselectricfrontier.com/dealership/" className="text-gray-700 hover:text-[#ea3900]">Dealership</a></li>
-                        <li><a href="https://karthikselectricfrontier.com/contact-us/" className="text-gray-700 hover:text-[#ea3900]">Contact us</a></li>
+                        <li><Link href="/" className="text-gray-700 hover:text-[#ea3900]">Home</Link></li>
+                        <li><Link href="/about-us" className="text-gray-700 hover:text-[#ea3900]">About us</Link></li>
+                        <li><Link href="/dealership" className="text-gray-700 hover:text-[#ea3900]">Dealership</Link></li>
+                        <li><Link href="/contact-us" className="text-gray-700 hover:text-[#ea3900]">Contact us</Link></li>
                     </ul>
                 </div>
             )}

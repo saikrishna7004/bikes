@@ -50,7 +50,7 @@ const PowerYourJourney = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid md:grid-cols-3 gap-10">
                 <div className="">
                     <div className="flex-shrink-0 my-3">
                         <img

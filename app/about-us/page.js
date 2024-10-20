@@ -32,7 +32,7 @@ const About = () => {
                     backgroundBlendMode: 'multiply'
                 }}
                 >
-                    <h1 className="text-700 text-[60px] font-bold">About Us</h1>
+                    <h1 className="md:text-[60px] text-[40px] font-bold">About Us</h1>
                 </section>
                 <div className="flex flex-col md:flex-row mb-10 px-4 gap-8 mx-auto" style={{ maxWidth: '1400px' }}>
                     <div className="md:w-1/2 p-4">
@@ -67,8 +67,8 @@ const About = () => {
                         className="w-full h-auto"
                     />
                 </div>
-                <div className="md:w-1/2 py-4" style={{ paddingRight: '6.2%' }}>
-                    <h2 className="text-[40px] leading-14 font-bold text-neutral-800">The Highest Quality Vehicles In the Industry.</h2>
+                <div className="md:w-1/2 py-4 px-10" style={{ paddingRight: '6.2%' }}>
+                    <h2 className="md:text-[40px] text-[20px] leading-14 font-bold text-neutral-800">The Highest Quality Vehicles In the Industry.</h2>
                     <p className="mt-4 text-justify text-neutral-700 leading-8">
                         Our electric bikes are the perfect blend of advanced technology and modern design, offering riders an effortless, enjoyable, and environmentally responsible commuting solution. From urban streets to rugged trails, Karthik&apos;s Electric Frontier bikes empower individuals to embrace greener, smarter transportation without compromising on performance or style.
                     </p>
@@ -78,8 +78,8 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="mb-10 mx-auto" style={{ maxWidth: '1200px', paddingTop: '100px' }}>
-                <div className="mb-4 bg-neutral-100">
+            <div className="mb-10 mx-auto px-10" style={{ maxWidth: '1200px', paddingTop: '100px' }}>
+                <div className="flex md:flex-row flex-col mb-4 bg-neutral-100">
                     <button
                         onClick={() => setActiveTab('mission')}
                         className={`py-4 px-8 text-xl font-semibold ${activeTab === 'mission' ? 'bg-orange-500 text-white' : 'bg-gray-200 text-gray-800'}`}

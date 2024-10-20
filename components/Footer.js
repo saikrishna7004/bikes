@@ -41,8 +41,8 @@ const Footer = () => {
                     <div className="flex justify-between items-center">
                         <div id="footer-info" className="text-center">
                             <p>
-                                Copyright © 2024, KARTHIK&apos;S ELECTRIC FRONTIER. All rights reserved. | Designed &amp; Developed By
-                                <a href="https://kreativdigimarketing.com/" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline"> Kreativ Digi Marketing</a>
+                                Copyright © 2024, KARTHIK&apos;S ELECTRIC FRONTIER. All rights reserved. | Designed &amp; Developed By&nbsp;
+                                <a href="https://instagram.com/saikrishna7004" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">Sai Krishna Karnati</a>
                             </p>
                         </div>
                         <div id="footer-social" className="flex pb-2">

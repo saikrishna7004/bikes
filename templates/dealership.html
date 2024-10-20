@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Dealership Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .content {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #ea3900;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>New Dealership Request</h1>
+        <div class="content">
+            <p><strong>Name:</strong> {{fullName}}</p>
+            <p><strong>Email:</strong> {{email}}</p>
+            <p><strong>Contact Number:</strong> {{contactNumber}}</p>
+            <p><strong>State:</strong> {{state}}</p>
+            <p><strong>District:</strong> {{district}}</p>
+            <p><strong>Address:</strong> {{address}}</p>
+        </div>
+        <div class="footer">
+            <p>Action is required to follow up on this request.</p>
+            <p>This email was sent from <a href="https://example.com">Karthik's Electric Frontier.</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
