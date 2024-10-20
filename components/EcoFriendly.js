@@ -1,9 +1,19 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const EcoFriendly = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsVisible(true);
+        }, 100); // Delay for 100ms to ensure the animation triggers after the component mounts
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
-        <div className="px-5 flex flex-wrap justify-between relative container max-w-[1450px] ms-auto mr-0 mb-10">
+        <div className="px-5 flex flex-wrap justify-between relative container max-w-[1300px] ms-auto mr-0 mb-10">
             <div className="w-full md:w-2/5 pr-5 z-10 relative py-10">
                 <h1 className="text-4xl font-bold text-[#ea3900] head pl-8 relative">
                     <div className="absolute inset-y-0 left-0 w-full md:mx-[-105%] mx-[-100%] bg-[#ea3900] z-[-1]"></div>
@@ -23,7 +33,7 @@ const EcoFriendly = () => {
                     height={800}
                     src="https://karthikselectricfrontier.com/wp-content/uploads/2024/10/PEV_ELECTRIC_13-removebg-preview-2.png"
                     alt="Electric Bike"
-                    className="w-[1200px] h-auto"
+                    className={`w-[1200px] h-auto ${isVisible ? 'slide-in' : 'opacity-0'}`} // Apply animation class conditionally
                 />
                 <div className="absolute inset-0 z-[-1]" style={{ background: 'linear-gradient(180deg,rgba(0,0,0,0) 80%,#ea3900 80%)' }}></div>
             </div>

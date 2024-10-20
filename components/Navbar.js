@@ -39,7 +39,7 @@ const Navbar = () => {
 
     return (
         <header className="bg-white fixed top-0 left-0 w-full shadow z-50">
-            <div className="container mx-auto flex justify-between items-center md:px-[160px] px-[50px]">
+            <div className="container mx-auto flex justify-between items-center md:px-[100px] px-[50px]">
                 <div className="logo_container">
                     <a href="/">
                         <Image

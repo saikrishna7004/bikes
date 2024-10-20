@@ -9,10 +9,10 @@ const DealershipSection = () => {
                     <p className="font-bold text-white">
                         We are Distributors of PEV ELECTRIC Vehicles in Telangana and Andhra Pradesh
                     </p>
-                    <h2 className="text-white text-2xl mt-2 head">
+                    <h2 className="text-white mt-2 head">
                         Contact us for dealership opportunities
                     </h2>
-                    <h2 className="text-white text-2xl mt-2 head">
+                    <h2 className="text-white mt-2 head">
                         in AP and Telangana
                     </h2>
                 </div>

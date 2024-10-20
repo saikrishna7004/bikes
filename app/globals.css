@@ -34,7 +34,7 @@ p {
 .head {
   font-family: 'Bebas Neue', display;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 60px;
   line-height: 0.8em;
 }
 
@@ -87,7 +87,7 @@ p {
 .head-2 {
   font-family: 'Bebas Neue', display;
   font-weight: 500;
-  font-size: 90px;
+  font-size: 60px;
   line-height: 1em;
 }
 
@@ -151,5 +151,20 @@ p {
 
   .new-head {
     font-size: 24px;
+  }
+}
+
+.slide-in {
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
   }
 }

@@ -80,27 +80,27 @@ const About = () => {
                         backgroundBlendMode: 'multiply'
                     }}
                 >
-                    <h1 className="md:text-[60px] text-[40px] font-bold">Contact Us</h1>
+                    <h1 className="md:text-[50px] text-[40px] font-bold">Contact Us</h1>
                 </section>
                 <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:px-[15%] py-[100px] p-10" style={{
                     backgroundSize: "initial", backgroundPosition: "left top",
                     backgroundImage: "url(https://karthikselectricfrontier.com/wp-content/uploads/2024/10/transportation-services-05.png)"
                 }}>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col pt-10">
                         <h2 className="text-[50px] leading-14 font-bold text-neutral-800 mb-8">Reach Us</h2>
                         <div className="flex mb-6">
-                            <div className="text-3xl mb-2 me-4 text-[#f1580c]"><FaMapPin /></div>
-                            <h4 className="text-lg font-semibold">
+                            <div className="text-3xl mb-2 me-6 text-[#f1580c]"><FaMapPin /></div>
+                            <h4 className="text-center font-bold">
                                 4-84, Brindhavan Nagar, Street No.8, Habsiguda, Hyderabad - 500007
                             </h4>
                         </div>
                         <div className="flex mb-6">
-                            <div className="text-3xl mb-2 me-4 text-[#f1580c]"><FaPhone /></div>
-                            <h4 className="text-lg font-semibold">+91-8520027796 | +91-9566560926</h4>
+                            <div className="text-3xl mb-2 me-6 text-[#f1580c]"><FaPhone /></div>
+                            <h4 className="mx-auto font-bold">+91-8520027796 | +91-9566560926</h4>
                         </div>
                         <div className="flex mb-6">
-                            <div className="text-3xl mb-2 me-4 text-[#f1580c]"><FaEnvelope /></div>
-                            <h4 className="text-lg font-semibold">info@karthikselectricfrontier.com</h4>
+                            <div className="text-3xl mb-2 me-6 text-[#f1580c]"><FaEnvelope /></div>
+                            <p className="mx-auto font-bold">info@karthikselectricfrontier.com</p>
                         </div>
                     </div>
 

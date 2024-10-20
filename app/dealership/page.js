@@ -83,13 +83,13 @@ const ContactUs = () => {
                         alt="Logo"
                         className="mx-auto mb-4 w-30 h-30"
                     />
-                    <h3 className="md:text-[60px] text-[40px] oswald px-10">Contact Us for Dealership</h3>
+                    <h3 className="md:text-[50px] text-[40px] oswald px-10">Contact Us for Dealership</h3>
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row mt-[-20px] md:pl-[13%]">
+            <div className="flex flex-col md:flex-row mt-[-20px] md:pl-[15%]">
                 <div className="md:w-3/8 bg-[#ea3900] text-white p-12">
-                    <h2 className="text-[50px] text-bold mb-4 oswald">Get Started With Dealership Form</h2>
+                    <h2 className="text-[55px] text-bold mb-4 oswald">Get Started With Dealership Form</h2>
                     <form onSubmit={handleSubmit} className="py-6">
                         <input
                             type="text"

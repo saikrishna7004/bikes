@@ -32,11 +32,11 @@ const About = () => {
                     backgroundBlendMode: 'multiply'
                 }}
                 >
-                    <h1 className="md:text-[60px] text-[40px] font-bold">About Us</h1>
+                    <h1 className="md:text-[50px] text-[40px] font-bold">About Us</h1>
                 </section>
-                <div className="flex flex-col md:flex-row mb-10 px-4 gap-8 mx-auto" style={{ maxWidth: '1400px' }}>
+                <div className="flex flex-col md:flex-row mb-10 px-4 gap-8 mx-auto" style={{ maxWidth: '1140px' }}>
                     <div className="md:w-1/2 p-4">
-                        <h2 className="text-[40px] leading-14 font-bold text-neutral-800">Experience the Future of Mobility with PEV Electric Bikes</h2>
+                        <h2 className="text-[34px] leading-14 font-bold text-neutral-800">Experience the Future of Mobility with PEV Electric Bikes</h2>
                         <p className="mt-4 text-justify text-neutral-700 leading-8 text-[16px]">
                             At <strong>Karthik&apos;s Electric Frontier</strong>, we are dedicated to driving the future of sustainable transportation with our innovative <strong>Electric PEV bikes</strong>. Founded with the vision of reducing carbon footprints and enhancing the way people move through cities and beyond, PEV bikes is committed to designing electric bikes that are not just eco-friendly but also stylish, efficient, and accessible to everyone.
                         </p>
@@ -56,7 +56,7 @@ const About = () => {
             </div>
 
             <div className="flex flex-col md:flex-row mb-10">
-                <div className="md:w-1/2 md:pr-16">
+                <div className="md:w-1/2 md:pr-14">
                     <Image
                         loading="lazy"
                         decoding="async"
@@ -67,7 +67,7 @@ const About = () => {
                         className="w-full h-auto"
                     />
                 </div>
-                <div className="md:w-1/2 py-4 px-10" style={{ paddingRight: '6.2%' }}>
+                <div className="md:w-1/2 py-4 pe-8" style={{ paddingRight: '6.2%' }}>
                     <h2 className="md:text-[40px] text-[20px] leading-14 font-bold text-neutral-800">The Highest Quality Vehicles In the Industry.</h2>
                     <p className="mt-4 text-justify text-neutral-700 leading-8">
                         Our electric bikes are the perfect blend of advanced technology and modern design, offering riders an effortless, enjoyable, and environmentally responsible commuting solution. From urban streets to rugged trails, Karthik&apos;s Electric Frontier bikes empower individuals to embrace greener, smarter transportation without compromising on performance or style.
