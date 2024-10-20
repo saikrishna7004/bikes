@@ -7,13 +7,6 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
@@ -23,5 +16,96 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.custom-container {
+  width: 80%;
+  max-width: 1650px;
+}
+
+p {
+  line-height: 1.8em;
+  font-size: 16px;
+  line-height: 1.8em;
+  padding-bottom: 20px !important;
+}
+
+.head {
+  font-family: 'Bebas Neue', display;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 0.8em;
+}
+
+.sub-head {
+  font-family: 'Bebas Neue', display;
+  font-weight: 500;
+  font-size: 66px;
+  line-height: 0.8em;
+}
+
+.sub-head-2 {
+  font-family: 'Bebas Neue', display;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.8em;
+}
+
+.text {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.space-box {
+  background-color: #f6f6f6;
+  padding-top: 150px;
+  padding-right: 80px;
+  padding-bottom: 100px;
+  padding-left: 80px;
+}
+
+.new-test {
+  font-family: 'ABeeZee', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 20px;
+}
+
+.link:hover {
+  color: #777;
+}
+
+.link.active:hover {
+  color: #666;
+}
+
+.link.active {
+  color: #ea3900;
+}
+
+@media (max-width: 768px) {
+  .space-box {
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+  }
+
+  .sub-head {
+    font-size: 40px;
+  }
+
+  .sub-head-2 {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .head {
+    font-size: 50px;
+    line-height: 1;
   }
 }
