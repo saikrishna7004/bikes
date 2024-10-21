@@ -26,7 +26,7 @@ export async function POST(request) {
 
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: process.env.RECIPIENT_EMAIL,
+            to: process.env.ENVIRONMENT == "dev" ? email : process.env.RECIPIENT_EMAIL,
             subject: `New Contact Form Submission from ${name}`,
             html: emailTemplate,
         };
