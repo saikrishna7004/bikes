@@ -7,49 +7,20 @@ import Link from 'next/link';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [imageHeight, setImageHeight] = useState(200);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.innerWidth >= 768) {
-                const scrollY = window.scrollY;
-                const newHeight = Math.max(80, 200 - scrollY);
-                setImageHeight(newHeight);
-            }
-        };
-
-        const handleResize = () => {
-            if (window.innerWidth < 768) {
-                setImageHeight(100);
-            } else {
-                handleScroll();
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        window.addEventListener('resize', handleResize);
-
-        handleResize();
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
     return (
         <header className="bg-white fixed top-0 left-0 w-full shadow z-50">
             <div className="container mx-auto flex justify-between items-center md:px-[100px] px-[50px]">
-                <div className="logo_container">
-                    <a href="/">
+                <div className="logo_container py-2">
+                    <Link href="/">
                         <Image
-                            src="https://karthikselectricfrontier.com/wp-content/uploads/2024/10/logo.png"
-                            width={imageHeight}
-                            height={imageHeight}
-                            alt="Karthik's Electric Frontier"
+                            src="/logo.jpg"
+                            width={200}
+                            height={100}
+                            alt="Devashree PEV"
                             className="h-auto"
                         />
-                    </a>
+                    </Link>
                 </div>
                 <nav className="hidden md:flex flex-grow justify-end">
                     <ul className="flex space-x-8 new-text font-semibold">

@@ -1,11 +1,8 @@
 "use client";
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import { FaArrowRight, FaEnvelope, FaLocationArrow, FaMailchimp, FaMapPin, FaPhone } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaArrowRight, FaEnvelope, FaMailchimp, FaMapPin, FaPhone } from 'react-icons/fa';
 
 const About = () => {
-    const [marginTop, setMarginTop] = useState(0);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -16,20 +13,7 @@ const About = () => {
     });
     const [success, setSuccess] = useState(null);
     const [error, setError] = useState(null);
-    const [isLoading, setIsLoading] = useState(false); // New loading state
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            const newHeight = Math.max(0, -scrollY);
-            setMarginTop(newHeight);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -69,7 +53,7 @@ const About = () => {
     };
 
     return (
-        <div className="mx-auto montserrat" style={{ paddingTop: '200px', overflowY: 'hidden', marginTop: `${marginTop}px` }}>
+        <div className="mx-auto montserrat" style={{ paddingTop: '95px', overflowY: 'hidden' }}>
             <div className='mx-auto'>
                 <section className="text-center text-white relative bg-[url('https://karthikselectricfrontier.com/wp-content/uploads/2024/10/transportation-services-18.png')] bg-cover bg-no-repeat bg-blend-multiply"
                     style={{

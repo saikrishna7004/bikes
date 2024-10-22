@@ -1,27 +1,12 @@
 "use client";
 import Image from 'next/image';
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const About = () => {
-    const [marginTop, setMarginTop] = useState(0);
     const [activeTab, setActiveTab] = useState('mission');
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            const newHeight = Math.max(0, - scrollY);
-            setMarginTop(newHeight);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
     return (
-        <div className="mx-auto montserrat" style={{ paddingTop: '200px', overflowY: 'hidden', marginTop: `${marginTop}px` }}>
+        <div className="mx-auto montserrat" style={{ paddingTop: '95px', overflowY: 'hidden' }}>
             <div className='mx-auto'>
                 <section className="text-center text-white mb-10 relative bg-[url('https://karthikselectricfrontier.com/wp-content/uploads/2024/10/transportation-services-18.png')] bg-cover bg-no-repeat bg-blend-multiply"
                 style={{
@@ -38,7 +23,7 @@ const About = () => {
                     <div className="md:w-1/2 p-4">
                         <h2 className="text-[34px] leading-14 font-bold text-neutral-800">Experience the Future of Mobility with PEV Electric Bikes</h2>
                         <p className="mt-4 text-justify text-neutral-700 leading-8 text-[16px]">
-                            At <strong>Karthik&apos;s Electric Frontier</strong>, we are dedicated to driving the future of sustainable transportation with our innovative <strong>Electric PEV bikes</strong>. Founded with the vision of reducing carbon footprints and enhancing the way people move through cities and beyond, PEV bikes is committed to designing electric bikes that are not just eco-friendly but also stylish, efficient, and accessible to everyone.
+                            At <strong>Devashree PEV</strong>, we are dedicated to driving the future of sustainable transportation with our innovative <strong>Electric PEV bikes</strong>. Founded with the vision of reducing carbon footprints and enhancing the way people move through cities and beyond, PEV bikes is committed to designing electric bikes that are not just eco-friendly but also stylish, efficient, and accessible to everyone.
                         </p>
                     </div>
                     <div className="md:w-1/2 p-4">
@@ -70,10 +55,10 @@ const About = () => {
                 <div className="md:w-1/2 py-4 pe-8" style={{ paddingRight: '6.2%' }}>
                     <h2 className="md:text-[40px] text-[20px] leading-14 font-bold text-neutral-800">The Highest Quality Vehicles In the Industry.</h2>
                     <p className="mt-4 text-justify text-neutral-700 leading-8">
-                        Our electric bikes are the perfect blend of advanced technology and modern design, offering riders an effortless, enjoyable, and environmentally responsible commuting solution. From urban streets to rugged trails, Karthik&apos;s Electric Frontier bikes empower individuals to embrace greener, smarter transportation without compromising on performance or style.
+                        Our electric bikes are the perfect blend of advanced technology and modern design, offering riders an effortless, enjoyable, and environmentally responsible commuting solution. From urban streets to rugged trails, Devashree PEV bikes empower individuals to embrace greener, smarter transportation without compromising on performance or style.
                     </p>
                     <p className="mt-2 text-justify text-neutral-700 leading-8">
-                        At Karthik&apos;s Electric Frontier, we prioritize quality and customer satisfaction, constantly innovating to ensure that every ride is smooth, safe, and sustainable. Our team of passionate engineers, designers, and sustainability advocates work tirelessly to create bikes that push the boundaries of personal mobility, meeting the needs of today&apos;s environmentally-conscious riders.
+                        At Devashree PEV, we prioritize quality and customer satisfaction, constantly innovating to ensure that every ride is smooth, safe, and sustainable. Our team of passionate engineers, designers, and sustainability advocates work tirelessly to create bikes that push the boundaries of personal mobility, meeting the needs of today&apos;s environmentally-conscious riders.
                     </p>
                 </div>
             </div>

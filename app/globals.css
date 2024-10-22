@@ -48,13 +48,13 @@ p {
 .sub-head-2 {
   font-family: 'Bebas Neue', display;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.8em;
 }
 
 .text {
-  font-weight: 200;
-  font-size: 20px;
+  font-family: 'Open Sans',Arial,sans-serif;
+  font-size: 16px;
   line-height: 1.8em;
   color: #666;
 }

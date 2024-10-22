@@ -24,7 +24,7 @@ const AboutInfo = () => {
                 <div className="space-box">
                     <h2 className="head">ABOUT</h2>
                     <p className="mt-4 text-justify text-[#666]" style={{ fontSize: '18px' }}>
-                        <strong>Karthik’s Electric Frontier</strong> is revolutionizing personal transportation with its <strong>PEV Bikes</strong> series, a top-tier line of electric bikes designed for the modern commuter and eco-conscious adventurer. Combining sleek design with advanced engineering, Karthik’s Electric Frontier bikes offer a smooth, reliable, and energy-efficient ride.
+                        <strong>Devashree PEV</strong> is revolutionizing personal transportation with its <strong>PEV Bikes</strong> series, a top-tier line of electric bikes designed for the modern commuter and eco-conscious adventurer. Combining sleek design with advanced engineering, Devashree PEV bikes offer a smooth, reliable, and energy-efficient ride.
                     </p>
                     <p className="mt-4 text-justify text-[#666]" style={{ fontSize: '18px' }}>
                         Built with a focus on sustainability and performance, the Electric Frontier PEV bikes feature powerful electric motors, long-lasting batteries, and durable frames designed to handle both urban streets and rugged trails. Whether you’re commuting to work or exploring off-road paths, these bikes provide a seamless, pedal-assist experience that minimizes effort while maximizing range and speed.

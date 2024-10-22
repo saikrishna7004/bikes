@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link';
 import React from 'react';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaEnvelope, FaFacebook, FaGlobe, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -11,10 +11,10 @@ const Footer = () => {
                     <div className="flex md:flex-row flex-col">
                         <div className="md:w-2/4 text-white p-6">
                             <h3 className="sub-head-2 text-neutral-400 pb-2">Phone</h3>
-                            <p className="footer-head mt-2">+91-8520027796</p>
-                            <p className="footer-head ">+91-9566560926</p>
+                            <p className="footer-head mt-2">+91-9959113045</p>
+                            <p className="footer-head ">+91-8985481508</p>
                             <h3 className="sub-head-2 text-neutral-400 pb-2 mt-4">Email</h3>
-                            <p className="footer-text mt-2">info@karthikselectricfrontier.com</p>
+                            <p className="footer-text mt-2">devashreepev@gmail.com</p>
                         </div>
 
                         <div className="md:w-1/4 text-white p-6">
@@ -31,7 +31,7 @@ const Footer = () => {
                         <div className="md:w-1/4 text-white p-6">
                             <h4 className="sub-head-2 text-neutral-400">ADDRESS</h4>
                             <div className="h-2 bg-[#ea3900] mt-3 mb-6 h-[5px]"></div>
-                            <p className="mt-6 pt-2">4-84, Brindhavan Nagar, Street No.8, Habsiguda, Hyderabad – 500007</p>
+                            <p className="mt-6 pt-2">55-4-659/1, Opp Balaji Gardens, Erragattugutta, Hanamkonda, Telangana - 506015</p>
                         </div>
                     </div>
                 </div>
@@ -41,19 +41,22 @@ const Footer = () => {
                     <div className="flex justify-between items-center">
                         <div id="footer-info" className="text-center">
                             <p>
-                                Copyright © 2024, KARTHIK&apos;S ELECTRIC FRONTIER. All rights reserved. | Designed &amp; Developed By&nbsp;
+                                Copyright © 2024, DEVASHREE PEV. All rights reserved. | Designed &amp; Developed By&nbsp;
                                 <a href="https://instagram.com/saikrishna7004" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">Sai Krishna Karnati</a>
                             </p>
                         </div>
-                        <div id="footer-social" className="flex pb-2">
-                            <a className="mx-3" href="https://www.facebook.com/karthikselectricfrontier" target="_blank" rel="noopener noreferrer">
+                        <div id="footer-social" className="flex pb-6">
+                            <a className="mx-3" href="https://www.devashreepev.com" target="_blank" rel="noopener noreferrer">
+                                <FaGlobe size={24} />
+                            </a>
+                            <a className="mx-3" href="mailto:devashreepev@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <FaEnvelope size={24} />
+                            </a>
+                            <a className="mx-3" href="https://www.facebook.com/profile.php?id=61567064468328" target="_blank" rel="noopener noreferrer">
                                 <FaFacebook size={24} />
                             </a>
-                            <a className="mx-3" href="https://www.instagram.com/karthikselectricfrontier/" target="_blank" rel="noopener noreferrer">
+                            <a className="mx-3" href="https://www.instagram.com/devashreepev" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram size={24} />
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCvWjzX2j8d4t5eTJ8YQ8J9Q" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-youtube text-white text-2xl mx-2"></i>
                             </a>
                         </div>
                     </div>
