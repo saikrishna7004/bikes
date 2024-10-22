@@ -2,7 +2,7 @@ import React from 'react';
 
 const PowerYourJourney = () => {
     return (
-        <div className="py-40 md:px-20 px-5 custom-container mx-auto">
+        <div className="py-20 md:px-20 px-5 custom-container mx-auto">
             <div className="flex mb-10">
                 <div className="md:w-2/5">
                     <h2 className="sub-head mt-2">Power Your Journey</h2>

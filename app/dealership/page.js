@@ -1,8 +1,7 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const ContactUs = () => {
-    const [marginTop, setMarginTop] = useState(0);
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -15,19 +14,6 @@ const ContactUs = () => {
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const [isLoading, setIsLoading] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            const newHeight = Math.max(0, -scrollY);
-            setMarginTop(newHeight);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -68,7 +54,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div className="mx-auto pt-4" style={{ paddingTop: '200px', overflowY: 'hidden', marginTop: `${marginTop}px` }}>
+        <div className="mx-auto pt-4" style={{ paddingTop: '95px', overflowY: 'hidden' }}>
             <div
                 className="bg-gray-800 text-white text-center py-8"
                 style={{
@@ -88,7 +74,7 @@ const ContactUs = () => {
             </div>
 
             <div className="flex flex-col md:flex-row mt-[-20px] md:pl-[15%]">
-                <div className="md:w-3/8 bg-[#ea3900] text-white p-12">
+                <div className="md:w-1/2 bg-[#ea3900] text-white p-12">
                     <h2 className="text-[55px] text-bold mb-4 oswald">Get Started With Dealership Form</h2>
                     <form onSubmit={handleSubmit} className="py-6">
                         <input
@@ -171,8 +157,8 @@ const ContactUs = () => {
                     )}
                 </div>
 
-                <div className="md:w-5/8" style={{ backgroundImage: "url(https://karthikselectricfrontier.com/wp-content/uploads/2024/10/sdfs.jpg)", backgroundPositionX: 'center', backgroundSize: 'cover', minHeight: '400px' }}>
-                    <h2 className="text-[36px] text-bold mb-4 oswald p-8 bg-[#19242d] text-white break-words text-center">+91-8520027796 | dealership@karthikselectricfrontier.com</h2>
+                <div className="md:w-1/2" style={{ backgroundImage: "url(https://karthikselectricfrontier.com/wp-content/uploads/2024/10/sdfs.jpg)", backgroundPositionX: 'center', backgroundSize: 'cover', minHeight: '400px' }}>
+                    <h2 className="text-[32px] text-bold mb-4 oswald p-8 bg-[#19242d] text-white text-center">+91-9959113045 | devashreepev@gmail.com</h2>
                 </div>
             </div>
         </div>

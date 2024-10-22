@@ -9,30 +9,9 @@ import ElectricVehicles from '@/components/Vehicles';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-    const [marginTop, setMarginTop] = useState(0);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            const newHeight = Math.max(-100, 100 - scrollY);
-            setMarginTop(newHeight);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
-        <div
-            style={{
-                paddingTop: '200px',
-                overflowY: 'hidden',
-                marginTop: `${marginTop}px`,
-            }}
-        >
+        <div style={{ paddingTop: '95px', overflowY: 'hidden', marginTop: '20px' }}>
             <EcoFriendly />
 
             <AboutInfo />

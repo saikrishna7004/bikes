@@ -7,13 +7,13 @@ const EcoFriendly = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsVisible(true);
-        }, 100); // Delay for 100ms to ensure the animation triggers after the component mounts
+        }, 100);
 
         return () => clearTimeout(timer);
     }, []);
 
     return (
-        <div className="px-5 flex flex-wrap justify-between relative container max-w-[1300px] ms-auto mr-0 mb-10">
+        <div className="flex flex-wrap justify-between relative container max-w-[1300px] ms-auto mr-0 mb-10">
             <div className="w-full md:w-2/5 pr-5 z-10 relative py-10">
                 <h1 className="text-4xl font-bold text-[#ea3900] head pl-8 relative">
                     <div className="absolute inset-y-0 left-0 w-full md:mx-[-105%] mx-[-100%] bg-[#ea3900] z-[-1]"></div>

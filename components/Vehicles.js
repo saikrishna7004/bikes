@@ -51,7 +51,7 @@ const ElectricVehicles = () => {
     }, [refs]);
 
     return (
-        <div className="bg-gray-100 py-10">
+        <div className="bg-gray-100 py-20">
             <div className="text-center mb-8">
                 <h3 className="md:text-4xl text-2xl font-bold md:mx-20 mx-4 leading-6">
                     Redefine Your Ride: Discover the<br /> Next Generation of Electric Mobility
