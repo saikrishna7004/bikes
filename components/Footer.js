@@ -45,11 +45,7 @@ const Footer = () => {
                                 <a href="https://instagram.com/saikrishna7004" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">Sai Krishna Karnati</a>
                             </p>
                         </div>
-<<<<<<< HEAD
                         <div id="footer-social" className="flex pb-6">
-=======
-                        <div id="footer-social" className="flex pb-2">
->>>>>>> a8d91dedb94a2a259ec675b62b1670a22b32a8f0
                             <a className="mx-3" href="https://www.devashreepev.com" target="_blank" rel="noopener noreferrer">
                                 <FaGlobe size={24} />
                             </a>
