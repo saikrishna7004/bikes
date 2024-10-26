@@ -13,7 +13,7 @@ const PEVBikesSection = () => {
                     <h2 className="head-2 text-white">Effortless Mobility: <br />Devashree&apos;s PEV Bikes</h2>
                 </div>
                 <p className="md:text-lg text-white" style={{maxWidth: '640px'}}>
-                    Discover a new way to move with <strong>Devashree PEV PEV Bikes</strong>. Combining cutting-edge technology with eco-friendly design, our e-bikes offer a smooth, powerful ride for any journey. Whether commuting or exploring, experience effortless mobility with zero emissions.
+                    Discover a new way to move with <strong>Devashree PEV Bikes</strong>. Combining cutting-edge technology with eco-friendly design, our e-bikes offer a smooth, powerful ride for any journey. Whether commuting or exploring, experience effortless mobility with zero emissions.
                 </p>
             </div>
         </div>

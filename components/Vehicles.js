@@ -2,18 +2,16 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const ElectricVehicles = () => {
     const vehicles = [
-        { name: "PEV S1 PRO", price: "49,999/-", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-2.png" },
-        { name: "PEV STELLA", price: "67,000/-", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-3.png" },
-        { name: "PEV ULTRA 1.5", price: "73,000/-", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-4.png" },
-        { name: "PEV STELLA X1", price: "74,000/-", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-5.png" },
-        { name: "PEV RIDER 1.2", price: "84,000/-", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-6.png" },
-        { name: "PEV PANTHER", price: "76,500/-", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-7.png" },
-        { name: "PEV PRO N", price: "80,500/-", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-8.png" },
-        { name: "PEV 3V", price: "84,500/-", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-9.png" },
-        { name: "PEV PHANTOM S", price: "96,000/-", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-10.png" },
-        { name: "PEV PHANTOM D", price: "98,500/-", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-11.png" },
-        { name: "PEV HIGHRIDER", price: "1,30,000/-", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-12.png" },
-    ];
+        { name: "PEV S1 PRO", price: "55,000/-", colors: "Silver, Matt Black", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-2.png" },
+        { name: "PEV STELLA", price: "70,000/-", colors: "Silver, Matt Black", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-3.png" },
+        { name: "PEV ULTRA 1.5", price: "75,000/-", colors: "Copper, Matt Black", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-4.png" },
+        { name: "PEV STELLA X1", price: "76,000/-", colors: "Copper, Lavender", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-5.png" },
+        { name: "PEV PANTHER", price: "88,200/-", colors: "Gray", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-6.png" },
+        { name: "PEV PRO N", price: "85,000/-", colors: "Metallic Gray, White", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-8.png" },
+        { name: "PEV PHANTOM S", price: "98,000/-", colors: "Red, Matt Black", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-10.png" },
+        { name: "PEV PHANTOM D", price: "99,000/-", colors: "Metallic Gray, White", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-11.png" },
+        { name: "PEV HIGHRIDER", price: "1,44,500/-", colors: "Gray", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-12.png" },
+    ];    
 
     const [visibleImages, setVisibleImages] = useState(Array(vehicles.length).fill(false));
     const refs = useRef([]);
@@ -67,6 +65,7 @@ const ElectricVehicles = () => {
                     >
                         <h3 className="text-3xl font-semibold mb-2">{vehicle.name}</h3>
                         <h5 className="text-orange-600 font-bold">Price starts from: {vehicle.price}</h5>
+                        <p className="text-gray-600 mt-2">Color Variants: {vehicle.colors}</p>
                         {visibleImages[index] && ( 
                             <img className="my-10 w-100 h-100 mx-auto object-contain rounded px-4" src={vehicle.imgSrc} alt={vehicle.name} />
                         )}

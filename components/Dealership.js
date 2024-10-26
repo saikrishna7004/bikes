@@ -7,13 +7,13 @@ const DealershipSection = () => {
             <div className="container mx-auto flex flex-wrap justify-center py-10">
                 <div className="w-full md:w-3/4 text-center mb-4">
                     <p className="font-bold text-white">
-                        We are Distributors of PEV ELECTRIC Vehicles in Telangana and Andhra Pradesh
+                        We are dealers for Erstwhile districts of Warangal, Karimnagar, Khammam, Nizamabad & Adilabad
                     </p>
                     <h2 className="text-white mt-2 head">
-                        Contact us for dealership opportunities
+                        Contact us for 
                     </h2>
                     <h2 className="text-white mt-2 head">
-                        in AP and Telangana
+                        Sub-delaership / Outlets / Franchise
                     </h2>
                 </div>
                 <div className="w-full md:w-1/4 flex justify-center items-center">
