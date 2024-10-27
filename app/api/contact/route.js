@@ -13,25 +13,44 @@ export async function POST(request) {
                 pass: process.env.EMAIL_PASS,
             },
         });
+        
+        const recipientTemplatePath = path.join(process.cwd(), 'templates/contact_recipient.html');
+        let recipientTemplate = fs.readFileSync(recipientTemplatePath, 'utf-8');
 
-        const templatePath = path.join(process.cwd(), 'templates/contact.html');
-        let emailTemplate = fs.readFileSync(templatePath, 'utf-8');
-
-        emailTemplate = emailTemplate
+        recipientTemplate = recipientTemplate
             .replace(/{{name}}/g, name)
             .replace(/{{email}}/g, email)
             .replace(/{{phone}}/g, phone)
             .replace(/{{model}}/g, model)
             .replace(/{{message}}/g, message);
 
-        const mailOptions = {
+        const userTemplatePath = path.join(process.cwd(), 'templates/contact_user.html');
+        let userTemplate = fs.readFileSync(userTemplatePath, 'utf-8');
+
+        userTemplate = userTemplate
+            .replace(/{{name}}/g, name)
+            .replace(/{{email}}/g, email)
+            .replace(/{{phone}}/g, phone)
+            .replace(/{{model}}/g, model)
+            .replace(/{{message}}/g, message);
+
+        const recipientMailOptions = {
             from: process.env.EMAIL_USER,
-            to: (process.env.ENVIRONMENT == "dev") ? email : process.env.RECIPIENT_EMAIL,
+            to: process.env.RECIPIENT_EMAIL,
             subject: `New Contact Form Submission from ${name}`,
-            html: emailTemplate,
+            html: recipientTemplate,
         };
 
-        await transporter.sendMail(mailOptions);
+        const userMailOptions = {
+            from: process.env.EMAIL_USER,
+            to: email,
+            subject: `Confirmation: Your Contact Form Submission`,
+            html: userTemplate,
+        };
+
+        await transporter.sendMail(recipientMailOptions);
+        await transporter.sendMail(userMailOptions);
+
         return new Response(JSON.stringify({ success: true }), { status: 200 });
     } catch (error) {
         console.error('Error sending email:', error);

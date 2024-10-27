@@ -14,10 +14,10 @@ export async function POST(request) {
             },
         });
 
-        const templatePath = path.join(process.cwd(), 'templates/dealership.html');
-        let emailTemplate = fs.readFileSync(templatePath, 'utf-8');
+        const recipientTemplatePath = path.join(process.cwd(), 'templates/dealership_recipient.html');
+        let recipientTemplate = fs.readFileSync(recipientTemplatePath, 'utf-8');
 
-        emailTemplate = emailTemplate
+        recipientTemplate = recipientTemplate
             .replace(/{{fullName}}/g, fullName)
             .replace(/{{email}}/g, email)
             .replace(/{{contactNumber}}/g, contactNumber)
@@ -25,14 +25,34 @@ export async function POST(request) {
             .replace(/{{district}}/g, district)
             .replace(/{{address}}/g, address);
 
-        const mailOptions = {
+        const userTemplatePath = path.join(process.cwd(), 'templates/dealership_user.html');
+        let userTemplate = fs.readFileSync(userTemplatePath, 'utf-8');
+
+        userTemplate = userTemplate
+            .replace(/{{fullName}}/g, fullName)
+            .replace(/{{email}}/g, email)
+            .replace(/{{contactNumber}}/g, contactNumber)
+            .replace(/{{state}}/g, state)
+            .replace(/{{district}}/g, district)
+            .replace(/{{address}}/g, address);
+
+        const recipientMailOptions = {
             from: process.env.EMAIL_USER,
-            to: (process.env.ENVIRONMENT == "dev") ? email : process.env.RECIPIENT_EMAIL,
-            subject: `New Contact Form Submission from ${fullName}`,
-            html: emailTemplate,
+            to: process.env.RECIPIENT_EMAIL,
+            subject: `New Dealership Submission from ${fullName}`,
+            html: recipientTemplate,
         };
 
-        await transporter.sendMail(mailOptions);
+        const userMailOptions = {
+            from: process.env.EMAIL_USER,
+            to: email,
+            subject: `Confirmation: Your Dealership Submission`,
+            html: userTemplate,
+        };
+
+        await transporter.sendMail(recipientMailOptions);
+        await transporter.sendMail(userMailOptions);
+
         return new Response(JSON.stringify({ success: true }), { status: 200 });
     } catch (error) {
         console.error('Error sending email:', error);
