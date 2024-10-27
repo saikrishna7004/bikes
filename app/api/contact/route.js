@@ -21,7 +21,7 @@ export async function POST(request) {
             .replace(/{{name}}/g, name)
             .replace(/{{email}}/g, email)
             .replace(/{{phone}}/g, phone)
-            .replace(/{{model}}/g, model)
+            .replace(/{{model}}/g, model || '-')
             .replace(/{{message}}/g, message);
 
         const userTemplatePath = path.join(process.cwd(), 'templates/contact_user.html');
@@ -31,7 +31,7 @@ export async function POST(request) {
             .replace(/{{name}}/g, name)
             .replace(/{{email}}/g, email)
             .replace(/{{phone}}/g, phone)
-            .replace(/{{model}}/g, model)
+            .replace(/{{modelmessage}}/g, model ? `<p>We will get back to you shortly regarding your inquiry about <span class="highlight">${model}</span>.</p>` : '<p>We will get back to you shortly regarding your interest.</p>')
             .replace(/{{message}}/g, message);
 
         const recipientMailOptions = {
