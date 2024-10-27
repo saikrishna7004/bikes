@@ -80,11 +80,11 @@ const About = () => {
                         </div>
                         <div className="flex mb-6">
                             <div className="text-3xl mb-2 me-6 text-[#f1580c]"><FaPhone /></div>
-                            <h4 className="mx-auto font-bold">+91-8520027796 | +91-9566560926</h4>
+                            <h4 className="mx-auto font-bold">+91-9959113045</h4>
                         </div>
                         <div className="flex mb-6">
                             <div className="text-3xl mb-2 me-6 text-[#f1580c]"><FaEnvelope /></div>
-                            <p className="mx-auto font-bold">info@karthikselectricfrontier.com</p>
+                            <p className="mx-auto font-bold">devashreepev@gmail.com</p>
                         </div>
                     </div>
 
