@@ -75,7 +75,7 @@ const About = () => {
                         <div className="flex mb-6">
                             <div className="text-3xl mb-2 me-6 text-[#f1580c]"><FaMapPin /></div>
                             <h4 className="text-center font-bold">
-                                4-84, Brindhavan Nagar, Street No.8, Habsiguda, Hyderabad - 500007
+                                55-4-659/1, Opp Balaji Gardens, Erragattugutta, Hanamkonda, Telangana - 506015
                             </h4>
                         </div>
                         <div className="flex mb-6">
