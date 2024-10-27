@@ -78,7 +78,7 @@ const FAQSection = () => {
         <div className="flex flex-col md:flex-row">
             <div className="relative w-full md:w-1/2 bg-cover bg-center md:p-[80px] p-12"
                 style={{
-                    backgroundImage: "url('https://karthikselectricfrontier.com/wp-content/uploads/2024/10/transportation-services-01.png')",
+                    backgroundImage: "url('/images/transportation-services-01.png')",
                     backgroundAttachment: 'fixed',
                 }}>
                 <div className="h-full flex flex-col justify-between">

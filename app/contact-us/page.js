@@ -55,7 +55,7 @@ const About = () => {
     return (
         <div className="mx-auto montserrat" style={{ paddingTop: '95px', overflowY: 'hidden' }}>
             <div className='mx-auto'>
-                <section className="text-center text-white relative bg-[url('https://karthikselectricfrontier.com/wp-content/uploads/2024/10/transportation-services-18.png')] bg-cover bg-no-repeat bg-blend-multiply"
+                <section className="text-center text-white relative bg-[url('/images/transportation-services-18.png')] bg-cover bg-no-repeat bg-blend-multiply"
                     style={{
                         padding: '80px',
                         backgroundColor: '#f1580c',
@@ -68,7 +68,7 @@ const About = () => {
                 </section>
                 <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:px-[15%] py-[100px] p-10" style={{
                     backgroundSize: "initial", backgroundPosition: "left top",
-                    backgroundImage: "url(https://karthikselectricfrontier.com/wp-content/uploads/2024/10/transportation-services-05.png)"
+                    backgroundImage: "url(/images/transportation-services-05.png)"
                 }}>
                     <div className="flex flex-col pt-10">
                         <h2 className="text-[50px] leading-14 font-bold text-neutral-800 mb-8">Reach Us</h2>

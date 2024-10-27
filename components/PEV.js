@@ -5,7 +5,7 @@ const PEVBikesSection = () => {
         <div
             className="bg-cover bg-center py-10 md:h-[92vh] content-center"
             style={{
-                backgroundImage: `linear-gradient(90deg, #000000 10%, rgba(0, 0, 0, 0) 100%), url(https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design.png)`,
+                backgroundImage: `linear-gradient(90deg, #000000 10%, rgba(0, 0, 0, 0) 100%), url(/images/Untitled-design.png)`,
             }}
         >
             <div className="ml-auto md:w-[85%] w-[90%]">

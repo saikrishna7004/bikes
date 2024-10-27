@@ -31,7 +31,7 @@ const EcoFriendly = () => {
                     decoding="async"
                     width={1200}
                     height={800}
-                    src="https://karthikselectricfrontier.com/wp-content/uploads/2024/10/PEV_ELECTRIC_13-removebg-preview-2.png"
+                    src="/images/PEV_ELECTRIC_13-removebg-preview-2.png"
                     alt="Electric Bike"
                     className={`w-[1200px] h-auto ${isVisible ? 'slide-in' : 'opacity-0'}`} // Apply animation class conditionally
                 />

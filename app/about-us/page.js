@@ -8,7 +8,7 @@ const About = () => {
     return (
         <div className="mx-auto montserrat" style={{ paddingTop: '95px', overflowY: 'hidden' }}>
             <div className='mx-auto'>
-                <section className="text-center text-white mb-10 relative bg-[url('https://karthikselectricfrontier.com/wp-content/uploads/2024/10/transportation-services-18.png')] bg-cover bg-no-repeat bg-blend-multiply"
+                <section className="text-center text-white mb-10 relative bg-[url('/images/transportation-services-18.png')] bg-cover bg-no-repeat bg-blend-multiply"
                 style={{
                     padding: '80px',
                     backgroundColor: '#f1580c',
@@ -32,7 +32,7 @@ const About = () => {
                             decoding="async"
                             width={1920}
                             height={989}
-                            src="https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design.png"
+                            src="/images/Untitled-design.png"
                             alt="About Electric Bikes"
                             className="w-full h-auto"
                         />
@@ -47,7 +47,7 @@ const About = () => {
                         decoding="async"
                         width={1000}
                         height={600}
-                        src="https://karthikselectricfrontier.com/wp-content/uploads/2024/10/ea3900.png"
+                        src="/images/ea3900.png"
                         alt="about"
                         className="w-full h-auto"
                     />

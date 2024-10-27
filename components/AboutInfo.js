@@ -13,7 +13,7 @@ const AboutInfo = () => {
                     decoding="async"
                     width={600}
                     height={1200}
-                    src="https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-1-1.png"
+                    src="/images/Untitled-design-1-1.png"
                     alt="About Electric Bikes"
                     className="w-full h-auto"
                 />

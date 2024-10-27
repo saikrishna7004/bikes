@@ -58,14 +58,14 @@ const ContactUs = () => {
             <div
                 className="bg-gray-800 text-white text-center py-8"
                 style={{
-                    backgroundImage: "linear-gradient(140deg, rgba(25, 36, 45, 0.7) 0%, #19242d 100%), url(https://karthikselectricfrontier.com/wp-content/uploads/2024/10/contact.jpg)",
+                    backgroundImage: "linear-gradient(140deg, rgba(25, 36, 45, 0.7) 0%, #19242d 100%), url(/images/contact.jpg)",
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover'
                 }}
             >
                 <div style={{ padding: '10%' }}>
                     <img
-                        src="https://karthikselectricfrontier.com/wp-content/uploads/2024/10/11.png"
+                        src="/images/11.png"
                         alt="Logo"
                         className="mx-auto mb-4 w-30 h-30"
                     />
@@ -157,7 +157,7 @@ const ContactUs = () => {
                     )}
                 </div>
 
-                <div className="md:w-1/2" style={{ backgroundImage: "url(https://karthikselectricfrontier.com/wp-content/uploads/2024/10/sdfs.jpg)", backgroundPositionX: 'center', backgroundSize: 'cover', minHeight: '400px' }}>
+                <div className="md:w-1/2" style={{ backgroundImage: "url(/images/sdfs.jpg)", backgroundPositionX: 'center', backgroundSize: 'cover', minHeight: '400px' }}>
                     <h2 className="text-[32px] text-bold mb-4 oswald p-8 bg-[#19242d] text-white text-center">+91-9959113045 | devashreepev@gmail.com</h2>
                 </div>
             </div>

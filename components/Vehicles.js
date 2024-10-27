@@ -3,15 +3,15 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const ElectricVehicles = () => {
     const vehicles = [
-        { name: "PEV S1 PRO", price: "55,000/-", colors: "Silver, Matt Black", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-2.png" },
-        { name: "PEV STELLA", price: "70,000/-", colors: "Silver, Matt Black", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-3.png" },
-        { name: "PEV ULTRA 1.5", price: "75,000/-", colors: "Copper, Matt Black", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-4.png" },
-        { name: "PEV STELLA X1", price: "76,000/-", colors: "Copper, Lavender", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-5.png" },
-        { name: "PEV PANTHER", price: "88,200/-", colors: "Gray", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-6.png" },
-        { name: "PEV PRO N", price: "85,000/-", colors: "Metallic Gray, White", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-8.png" },
-        { name: "PEV PHANTOM S", price: "98,000/-", colors: "Red, Matt Black", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-10.png" },
-        { name: "PEV PHANTOM D", price: "99,000/-", colors: "Metallic Gray, White", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-11.png" },
-        { name: "PEV HIGHRIDER", price: "1,44,500/-", colors: "Gray", imgSrc: "https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Untitled-design-12.png" },
+        { name: "PEV S1 PRO", price: "55,000/-", colors: "Silver, Matt Black", imgSrc: "/images/Untitled-design-2.png" },
+        { name: "PEV STELLA", price: "70,000/-", colors: "Silver, Matt Black", imgSrc: "/images/Untitled-design-3.png" },
+        { name: "PEV ULTRA 1.5", price: "75,000/-", colors: "Copper, Matt Black", imgSrc: "/images/Untitled-design-4.png" },
+        { name: "PEV STELLA X1", price: "76,000/-", colors: "Copper, Lavender", imgSrc: "/images/Untitled-design-5.png" },
+        { name: "PEV PANTHER", price: "88,200/-", colors: "Gray", imgSrc: "/images/Untitled-design-6.png" },
+        { name: "PEV PRO N", price: "85,000/-", colors: "Metallic Gray, White", imgSrc: "/images/Untitled-design-8.png" },
+        { name: "PEV PHANTOM S", price: "98,000/-", colors: "Red, Matt Black", imgSrc: "/images/Untitled-design-10.png" },
+        { name: "PEV PHANTOM D", price: "99,000/-", colors: "Metallic Gray, White", imgSrc: "/images/Untitled-design-11.png" },
+        { name: "PEV HIGHRIDER", price: "1,44,500/-", colors: "Gray", imgSrc: "/images/Untitled-design-12.png" },
     ];    
 
     const [visibleImages, setVisibleImages] = useState(Array(vehicles.length).fill(false));

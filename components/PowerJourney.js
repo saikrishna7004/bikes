@@ -20,7 +20,7 @@ const PowerYourJourney = () => {
                             decoding="async"
                             width="64"
                             height="64"
-                            src="https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Artboard-5.png"
+                            src="/images/Artboard-5.png"
                             alt="Powerful Electric Motor"
                             className="mb-4"
                         />
@@ -38,7 +38,7 @@ const PowerYourJourney = () => {
                             decoding="async"
                             width="64"
                             height="64"
-                            src="https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Artboard-4.png"
+                            src="/images/Artboard-4.png"
                             alt="Long-Range Battery"
                             className="mb-4"
                         />
@@ -58,7 +58,7 @@ const PowerYourJourney = () => {
                             decoding="async"
                             width="64"
                             height="64"
-                            src="https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Artboard-8.png"
+                            src="/images/Artboard-8.png"
                             alt="Durable and Lightweight Design"
                             className="mb-4"
                         />
@@ -75,7 +75,7 @@ const PowerYourJourney = () => {
                             decoding="async"
                             width="64"
                             height="64"
-                            src="https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Artboard-6.png"
+                            src="/images/Artboard-6.png"
                             alt="Advanced Technology"
                             className="mb-4"
                         />
@@ -92,7 +92,7 @@ const PowerYourJourney = () => {
                             decoding="async"
                             width="64"
                             height="64"
-                            src="https://karthikselectricfrontier.com/wp-content/uploads/2024/10/Artboard-3.png"
+                            src="/images/Artboard-3.png"
                             alt="Eco-Friendly Solution"
                             className="mb-4"
                         />
