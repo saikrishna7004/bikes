@@ -18,7 +18,7 @@ const DealershipSection = () => {
                 </div>
                 <div className="w-full md:w-1/4 flex justify-center items-center">
                     <div className="mt-4">
-                        <Link href="https://karthikselectricfrontier.com/dealership/">
+                        <Link href="/dealership">
                             <button className="border-2 sub-head-2 text-white py-2 px-8 rounded transition">
                                 Contact Us
                             </button>
