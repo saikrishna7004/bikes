@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 
 const ElectricVehicles = () => {
@@ -69,7 +70,7 @@ const ElectricVehicles = () => {
                         {visibleImages[index] && ( 
                             <img className="my-10 w-100 h-100 mx-auto object-contain rounded px-4" src={vehicle.imgSrc} alt={vehicle.name} />
                         )}
-                        <a href="https://karthikselectricfrontier.com/contact-us/" className="mt-2 inline-block px-8 py-4 bg-orange-500 text-white rounded font-semibold hover:bg-orange-600">GET A QUOTE</a>
+                        <Link href="/contact-us" className="mt-2 inline-block px-8 py-4 bg-orange-500 text-white rounded font-semibold hover:bg-orange-600">GET A QUOTE</Link>
                     </div>
                 ))}
             </div>
