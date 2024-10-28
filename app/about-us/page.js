@@ -40,7 +40,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row mb-10">
+            <div className="flex flex-col md:flex-row mb-10 px-8 md:px-0">
                 <div className="md:w-1/2 md:pr-14">
                     <Image
                         loading="lazy"
