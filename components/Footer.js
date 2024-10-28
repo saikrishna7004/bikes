@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
             <footer id="main-footer" className="bg-neutral-900 text-neutral-300 pt-4">
                 <div id="footer-bottom" className="max-w-screen-xl mx-auto px-10">
-                    <div className="flex justify-between items-center">
+                    <div className="flex md:flex-row flex-col justify-between items-center">
                         <div id="footer-info" className="text-center">
                             <p>
                                 Copyright © 2024, DEVASHREE PEV. All rights reserved. | Designed &amp; Developed By&nbsp;
