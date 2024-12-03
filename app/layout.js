@@ -2,7 +2,15 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { getServerSession } from "next-auth";
 import BackToTop from "@/components/BackToTop";
+import SessionProvider from "@/components/SessionProvider";
+import 'react-toastify/dist/ReactToastify.css';
+import dynamic from "next/dynamic";
+
+const ToastContainer = dynamic(() => import('react-toastify').then(mod => mod.ToastContainer), {
+  ssr: false,
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,7 +28,9 @@ export const metadata = {
   description: "Effortless, Eco-Friendly Electric Bikes for Every Journey",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const session = await getServerSession();
+
   return (
     <html lang="en">
       <head>
@@ -35,10 +45,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        {children}
-        <BackToTop />
-        <Footer />
+        <SessionProvider session={session}>
+          <Navbar />
+          {children}
+          <ToastContainer />
+          <BackToTop />
+          <Footer />
+        </SessionProvider>
       </body>
     </html>
   );

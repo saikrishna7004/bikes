@@ -1,16 +1,27 @@
 "use client";
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { NavLink } from './NavLink';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Link from 'next/link';
+import { useSession } from 'next-auth/react';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const {data: session} = useSession();
+
+    const navLinks = [
+        { href: "/", label: "Home" },
+        { href: "/gallery", label: "Gallery" },
+        { href: "/about-us", label: "About us" },
+        { href: "/dealership", label: "Dealership" },
+        { href: "/contact-us", label: "Contact us" },
+        ...(session ? [{ href: "/admin", label: "Admin" }] : []),
+    ];
 
     return (
         <header className="bg-white fixed top-0 left-0 w-full shadow z-50">
-            <div className="container mx-auto flex justify-between items-center md:px-[100px] px-[50px]">
+            <div className="container mx-auto flex justify-between items-center lg:px-[100px] sm:px-0 px-[50px]">
                 <div className="logo_container py-2">
                     <Link href="/">
                         <Image
@@ -24,10 +35,11 @@ const Navbar = () => {
                 </div>
                 <nav className="hidden md:flex flex-grow justify-end">
                     <ul className="flex space-x-8 new-text font-semibold">
-                        <li><NavLink href="/" exact className="text-gray-700 link">Home</NavLink></li>
-                        <li><NavLink href="/about-us" className="text-gray-700 link">About us</NavLink></li>
-                        <li><NavLink href="/dealership" className="text-gray-700 link">Dealership</NavLink></li>
-                        <li><NavLink href="/contact-us" className="text-gray-700 link">Contact us</NavLink></li>
+                        {navLinks.map(({ href, label }) => (
+                            <li key={href}>
+                                <NavLink href={href} exact className="text-gray-700 link">{label}</NavLink>
+                            </li>
+                        ))}
                     </ul>
                 </nav>
                 <div className="md:hidden">
@@ -39,10 +51,11 @@ const Navbar = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-white absolute left-0 right-0 top-full shadow-lg">
                     <ul className="flex flex-col space-y-2 p-4">
-                        <li><Link href="/" className="text-gray-700 hover:text-[#ea3900]">Home</Link></li>
-                        <li><Link href="/about-us" className="text-gray-700 hover:text-[#ea3900]">About us</Link></li>
-                        <li><Link href="/dealership" className="text-gray-700 hover:text-[#ea3900]">Dealership</Link></li>
-                        <li><Link href="/contact-us" className="text-gray-700 hover:text-[#ea3900]">Contact us</Link></li>
+                        {navLinks.map(({ href, label }) => (
+                            <li key={href}>
+                                <Link href={href} className="text-gray-700 hover:text-[#ea3900]">{label}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             )}

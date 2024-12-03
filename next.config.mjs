@@ -10,7 +10,16 @@ const nextConfig = {
                 pathname: "**",
             }
         ],
-    }
+    },
+    webpack: (config) => {
+        config.resolve = {
+            ...config.resolve,
+            fallback: {
+                fs: false,
+            },
+        };
+        return config;
+    },
 };
 
 export default nextConfig;
