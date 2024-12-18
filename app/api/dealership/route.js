@@ -37,14 +37,14 @@ export async function POST(request) {
             .replace(/{{address}}/g, address);
 
         const recipientMailOptions = {
-            from: process.env.EMAIL_USER,
+            from: `"Devashree PEV" <${process.env.EMAIL_USER}>`,
             to: process.env.RECIPIENT_EMAIL,
             subject: `New Dealership Submission from ${fullName}`,
             html: recipientTemplate,
         };
 
         const userMailOptions = {
-            from: process.env.EMAIL_USER,
+            from: `"Devashree PEV" <${process.env.EMAIL_USER}>`,
             to: email,
             subject: `Confirmation: Your Dealership Submission`,
             html: userTemplate,

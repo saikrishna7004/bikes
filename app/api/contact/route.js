@@ -35,14 +35,14 @@ export async function POST(request) {
             .replace(/{{message}}/g, message);
 
         const recipientMailOptions = {
-            from: process.env.EMAIL_USER,
+            from: `"Devashree PEV" <${process.env.EMAIL_USER}>`,
             to: process.env.RECIPIENT_EMAIL,
             subject: `New Contact Form Submission from ${name}`,
             html: recipientTemplate,
         };
 
         const userMailOptions = {
-            from: process.env.EMAIL_USER,
+            from: `"Devashree PEV" <${process.env.EMAIL_USER}>`,
             to: email,
             subject: `Confirmation: Your Contact Form Submission`,
             html: userTemplate,
